@@ -317,32 +317,6 @@ button {
   50% { transform: translate(-50%, 6px); }
 }
 
-.copy-btn {
-  background: none;
-  border: 1px solid var(--border);
-  color: var(--cyan);
-  border-radius: 6px;
-  padding: 1px 10px;
-  font-size: 12px;
-  line-height: 1.6;
-  cursor: pointer;
-  transition: border-color 0.2s, background 0.2s;
-}
-.copy-btn:hover {
-  border-color: var(--blue);
-  background: var(--blue-soft);
-}
-.hero-socials {
-  align-items: center;
-  flex-wrap: wrap;
-}
-.email-row {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-}
-
 /* ============ Terminal ============ */
 .terminal {
   background: rgba(8, 12, 22, 0.92);

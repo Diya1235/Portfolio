@@ -1,8 +1,6 @@
 import { useState } from "react";
 import Section from "./Section.jsx";
 import { profile } from "../data/portfolio.js";
-import CopyEmail from "./CopyEmail.jsx";
-import EmailLink from "./EmailLink.jsx";
 
 const encode = (data) =>
   Object.keys(data)
@@ -38,16 +36,9 @@ export default function Contact() {
         <div className="contact-info">
           <p>
             I'm looking for a <span className="c-cyan">full-time DevOps Engineer</span> role. Whether you
-            have an opportunity, a question about my work, or just want to talk cricket — my inbox is open.
+            have an opportunity, a question about my work, or just want to talk cricket — send me a message using the form, or connect with me on LinkedIn.
           </p>
           <ul className="contact-links">
-            <li>
-              <span className="c-muted">email</span>
-              <span className="email-row">
-                <EmailLink mode="copy">{profile.email}</EmailLink>
-                <CopyEmail label="copy" />
-              </span>
-            </li>
             <li>
               <span className="c-muted">github</span>
               <a href={profile.github} target="_blank" rel="noreferrer">@{profile.githubUser}</a>
@@ -98,7 +89,8 @@ export default function Contact() {
           {status === "sent" && <p className="form-msg c-green">✔ Message delivered. I'll get back to you soon!</p>}
           {status === "error" && (
             <p className="form-msg c-red">
-              ✖ Something went wrong. Please email me directly at {profile.email}.
+              ✖ Something went wrong. Please reach me on{" "}
+              <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>.
             </p>
           )}
         </form>

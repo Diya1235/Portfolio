@@ -10,7 +10,6 @@ export const profile = {
   title: "Aspiring DevOps Engineer",
   role: "Laravel Developer @ Enjay IT Solutions",
   location: "Mumbai, Maharashtra",
-  email: "diyasingh20041@gmail.com",
   github: "https://github.com/Diya1235",
   githubUser: "Diya1235",
   linkedin: "https://www.linkedin.com/in/DiyaSingh45",

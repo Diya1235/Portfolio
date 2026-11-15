@@ -10,7 +10,6 @@ import {
   cricketLines,
 } from "../data/portfolio.js";
 import { prefersReducedMotion, scrollToSection } from "../hooks/useInView.js";
-import EmailLink from "./EmailLink.jsx";
 
 const BOOT = [
   "Booting diya-os v1.0 ...",
@@ -84,7 +83,7 @@ const COMMANDS = {
     desc: "how to reach me",
     run: () => (
       <>
-        <div>email    <EmailLink mode="copy">{profile.email}</EmailLink></div>
+        <div>message  type <span className="kw">cd contact</span> to use the contact form</div>
         <div>github   <a href={profile.github} target="_blank" rel="noreferrer">{profile.github}</a></div>
         <div>linkedin <a href={profile.linkedin} target="_blank" rel="noreferrer">{profile.linkedin}</a></div>
       </>
@@ -162,13 +161,6 @@ cricket-fan-1c2d3e        1/1     Running   0`}</pre>
     run: () => {
       window.open(profile.linkedin, "_blank", "noopener");
       return "Opening LinkedIn ↗";
-    },
-  },
-  "copy email": {
-    desc: "copy my email to clipboard",
-    run: () => {
-      navigator.clipboard?.writeText(profile.email).catch(() => {});
-      return <>📋 Copied <span className="kw">{profile.email}</span> to clipboard</>;
     },
   },
   clear: { desc: "clear the screen", run: () => null },
