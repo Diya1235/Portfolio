@@ -4,4 +4,6 @@ dist
 .env
 .env.*
 *.log
+# Private resume copy (contains phone number) — never commit
+resume/private/
 .DS_Store

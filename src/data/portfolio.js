@@ -92,8 +92,8 @@ export const projects = [
     stack: ["MongoDB", "Express", "React", "Node.js", "REST APIs"],
     devops: null,
     status: "shipped",
-    repo: null, // TODO: add GitHub repo URL if public
-    live: null, // TODO: add live demo URL if deployed
+    repo: "https://github.com/Diya1235/TechGuide",
+    live: null,
   },
   {
     name: "SIP Automation",
@@ -154,18 +154,18 @@ export const experience = [
     title: "B.Sc. Information Technology",
     org: "St. John College of Humanities & Sciences, Palghar",
     meta: "University of Mumbai",
-    period: "20XX – 20XX", // TODO: add your degree years
+    period: "2022 – 2025",
     highlight: "CGPA 9.9 / 10",
     points: ["Graduated with a CGPA of 9.9 / 10"],
   },
   {
     stage: "test",
-    title: "Intern (Virtual)", // TODO: add your exact internship role
+    title: "Web Development Intern",
     org: "CodSoft",
-    meta: "Remote · 1 month",
-    period: "TODO", // TODO: add month & year
+    meta: "Virtual",
+    period: "1 month", // optional: replace with month & year, e.g. "Jun 2024"
     highlight: null,
-    points: ["TODO: one line about what you built during the internship"],
+    points: ["Completed a one-month virtual internship in web development"],
   },
   {
     stage: "deploy",
@@ -193,7 +193,7 @@ export const experience = [
 ];
 
 export const certifications = [
-  { name: "Linux", issuer: "TODO: issuer", url: null },
+  { name: "Linux", issuer: "Coursera", url: null },
   { name: "Data Visualization", issuer: "Tata Group", url: null },
   { name: "Software Engineering", issuer: "Electronic Arts", url: null },
   { name: "Data Science", issuer: "IBM", url: null },
@@ -208,19 +208,22 @@ export const hobbies = [
   { icon: "🏏", name: "Watching cricket" },
 ];
 
-// TODO: replace with your own poems / thoughts
+// Your poems & thoughts — add more objects to this list to create new cards
 export const poems = [
   {
-    title: "Your first poem",
+    title: "sort()",
     lines: [
-      "Replace this with one of your poems —",
-      "open src/data/portfolio.js",
-      "and paste your words in here.",
+      "Everyone wants to sort their life,",
+      "but there's no built-in function called sort().",
     ],
   },
   {
-    title: "A thought",
-    lines: ["Add short thoughts here too.", "Each one becomes a new card."],
+    title: "The Bottom Line",
+    lines: [
+      "Hard work, struggle, efforts —",
+      "nothing matters;",
+      "at the end, what matters is the job.",
+    ],
   },
 ];
 

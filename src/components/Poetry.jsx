@@ -7,12 +7,12 @@ export default function Poetry() {
   const poem = poems[i];
 
   return (
-    <Section id="poetry" command="less ~/poems/*.txt" title="Poetry Corner ✍️">
-      <p className="section-sub">Code is logic. Poetry is everything else. A few words I've written:</p>
+    <Section id="poetry" command="less ~/thoughts/*.txt" title="Poems & Thoughts ✍️">
+      <p className="section-sub">Code is logic. Words are everything else. A few lines I've written:</p>
       <div className="poem-wrap">
         <article key={i} className="panel poem-card">
           <p className="panel-label">
-            poem_{String(i + 1).padStart(2, "0")}.txt
+            thought_{String(i + 1).padStart(2, "0")}.txt
           </p>
           <h3 className="poem-title">{poem.title}</h3>
           <div className="poem-body">
