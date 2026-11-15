@@ -207,8 +207,41 @@ export const hobbies = [
   { icon: "🏏", name: "Watching cricket" },
 ];
 
-// Your poems & thoughts — add more objects to this list to create new cards
+// Your poems & thoughts — add more objects to this list to create new cards.
+// lang: "hi" uses the Devanagari font. An empty string "" in lines = stanza break.
 export const poems = [
+  {
+    title: "संघर्ष",
+    lang: "hi",
+    meaning:
+      "Struggle — leaving home to chase a dream: long hours, a small room, missing mother's cooking, and a father waiting to see his child make it.",
+    lines: [
+      "आंखों में सपने सजाए,",
+      "बड़ी उम्मीद लेकर है आएं।",
+      "ख्वाब अपनों के पूरा करने,",
+      "अपनों को छोड़ ,परदेस है आए",
+      "",
+      "बोझ जिम्मेदारियां का भी,",
+      "अपने संग है लाए।",
+      "नौकरी ,पढ़ाई की तैयारी में,",
+      "अपने शौक भी दिए ठुकराएं।",
+      "",
+      "छोटे से मकान में रहकर,",
+      "दिन रात मेहनत करता हूं।",
+      "लोगों की इस भीड़ में भी,",
+      "अकेला खुद को पता हूं।",
+      "",
+      "पिज़्ज़ा, बर्गर के जमाने में,",
+      "दाल रोटी भी मीठी लगे।",
+      "मां के हाथ के खाने के लिए,",
+      "मन हमेशा तरसते रहे।",
+      "",
+      "मेहनत करते जब थक हु जाता,",
+      "तब पिता का चेहरा सामने है आता।",
+      "बैठे हैं जो आस लगाए,",
+      "कि उनका बच्चा कुछ बन है दिखाएं।",
+    ],
+  },
   {
     title: "sort()",
     lines: [

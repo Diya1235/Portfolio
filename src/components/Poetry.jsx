@@ -12,14 +12,19 @@ export default function Poetry() {
       <div className="poem-wrap">
         <article key={i} className="panel poem-card">
           <p className="panel-label">
-            thought_{String(i + 1).padStart(2, "0")}.txt
+            {poem.lang === "hi" ? "kavita" : "thought"}_{String(i + 1).padStart(2, "0")}.txt
           </p>
-          <h3 className="poem-title">{poem.title}</h3>
-          <div className="poem-body">
-            {poem.lines.map((l, k) => (
-              <p key={k}>{l}</p>
-            ))}
+          <h3 className="poem-title" lang={poem.lang}>{poem.title}</h3>
+          <div className="poem-body" lang={poem.lang}>
+            {poem.lines.map((l, k) =>
+              l === "" ? <div key={k} className="stanza-break" /> : <p key={k}>{l}</p>
+            )}
           </div>
+          {poem.meaning && (
+            <p className="poem-meaning">
+              <span className="c-muted"># meaning:</span> {poem.meaning}
+            </p>
+          )}
         </article>
         {poems.length > 1 && (
           <div className="poem-nav">

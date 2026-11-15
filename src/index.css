@@ -778,6 +778,27 @@ button {
   font-size: 15px;
   color: #c7dbff;
 }
+.stanza-break { height: 14px; }
+.poem-meaning {
+  margin: 18px 0 0;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  font-size: 13px;
+  color: #9fb6d8;
+}
+/* Hindi / Devanagari poems */
+[lang="hi"] {
+  font-family: "Tiro Devanagari Hindi", "Noto Sans Devanagari", "Nirmala UI", "Mangal", serif;
+}
+.poem-title[lang="hi"] { font-size: 26px; }
+.poem-body[lang="hi"] p,
+.terminal [lang="hi"] em {
+  font-style: normal;
+}
+.poem-body[lang="hi"] p {
+  font-size: 18px;
+  line-height: 1.75;
+}
 .poem-nav {
   display: flex;
   justify-content: center;

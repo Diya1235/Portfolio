@@ -115,9 +115,9 @@ cricket-fan-1c2d3e        1/1     Running   0`}</pre>
     run: () => {
       const p = pick(poems);
       return (
-        <div>
+        <div lang={p.lang}>
           <div className="c-cyan">~ {p.title} ~</div>
-          {p.lines.map((l, i) => <div key={i}><em>{l}</em></div>)}
+          {p.lines.map((l, i) => <div key={i}>{l === "" ? " " : <em>{l}</em>}</div>)}
         </div>
       );
     },
