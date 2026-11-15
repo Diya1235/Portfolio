@@ -24,7 +24,8 @@ jobs:
 
   deploy:
     needs: build
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    # Opt-in: set repo variable DEPLOY_WITH_ACTIONS=true and add the NETLIFY_* secrets
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && vars.DEPLOY_WITH_ACTIONS == 'true'
     runs-on: ubuntu-latest
     environment: production
     steps:
