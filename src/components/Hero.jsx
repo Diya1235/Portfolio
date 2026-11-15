@@ -3,6 +3,7 @@ import { profile } from "../data/portfolio.js";
 import { prefersReducedMotion, scrollToSection } from "../hooks/useInView.js";
 import Terminal from "./Terminal.jsx";
 import MatrixRain from "./MatrixRain.jsx";
+import CopyEmail from "./CopyEmail.jsx";
 
 function TypeWriter({ text, speed = 45 }) {
   const [shown, setShown] = useState(prefersReducedMotion() ? text : "");
@@ -63,6 +64,7 @@ export default function Hero() {
             <a href={profile.github} target="_blank" rel="noreferrer">github ↗</a>
             <a href={profile.linkedin} target="_blank" rel="noreferrer">linkedin ↗</a>
             <a href={`mailto:${profile.email}`}>email ↗</a>
+            <CopyEmail />
           </div>
         </div>
         <Terminal />

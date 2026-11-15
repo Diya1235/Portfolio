@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Section from "./Section.jsx";
 import { profile } from "../data/portfolio.js";
+import CopyEmail from "./CopyEmail.jsx";
 
 const encode = (data) =>
   Object.keys(data)
@@ -41,7 +42,10 @@ export default function Contact() {
           <ul className="contact-links">
             <li>
               <span className="c-muted">email</span>
-              <a href={`mailto:${profile.email}`}>{profile.email}</a>
+              <span className="email-row">
+                <a href={`mailto:${profile.email}`}>{profile.email}</a>
+                <CopyEmail label="copy" />
+              </span>
             </li>
             <li>
               <span className="c-muted">github</span>

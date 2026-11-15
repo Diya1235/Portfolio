@@ -163,6 +163,13 @@ cricket-fan-1c2d3e        1/1     Running   0`}</pre>
       return "Opening LinkedIn ↗";
     },
   },
+  "copy email": {
+    desc: "copy my email to clipboard",
+    run: () => {
+      navigator.clipboard?.writeText(profile.email).catch(() => {});
+      return <>📋 Copied <span className="kw">{profile.email}</span> to clipboard</>;
+    },
+  },
   clear: { desc: "clear the screen", run: () => null },
 };
 
