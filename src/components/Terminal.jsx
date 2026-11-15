@@ -10,6 +10,7 @@ import {
   cricketLines,
 } from "../data/portfolio.js";
 import { prefersReducedMotion, scrollToSection } from "../hooks/useInView.js";
+import EmailLink from "./EmailLink.jsx";
 
 const BOOT = [
   "Booting diya-os v1.0 ...",
@@ -83,7 +84,7 @@ const COMMANDS = {
     desc: "how to reach me",
     run: () => (
       <>
-        <div>email    <a href={`mailto:${profile.email}`}>{profile.email}</a></div>
+        <div>email    <EmailLink mode="copy">{profile.email}</EmailLink></div>
         <div>github   <a href={profile.github} target="_blank" rel="noreferrer">{profile.github}</a></div>
         <div>linkedin <a href={profile.linkedin} target="_blank" rel="noreferrer">{profile.linkedin}</a></div>
       </>
