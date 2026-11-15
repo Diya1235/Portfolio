@@ -146,6 +146,16 @@ cricket-fan-1c2d3e        1/1     Running   0`}</pre>
       return "Opening GitHub ↗";
     },
   },
+  resume: {
+    desc: "download my resume",
+    run: () => {
+      const a = document.createElement("a");
+      a.href = profile.resume;
+      a.download = "Diya_Singh_Resume.pdf";
+      a.click();
+      return <>Downloading <span className="kw">Diya_Singh_Resume.pdf</span> ... ✔</>;
+    },
+  },
   linkedin: {
     desc: "open my LinkedIn",
     run: () => {
@@ -245,7 +255,7 @@ export default function Terminal() {
     }
   };
 
-  const quick = ["help", "whoami", "skills", "docker ps", "sudo hire-diya"];
+  const quick = ["help", "whoami", "skills", "docker ps", "resume", "sudo hire-diya"];
 
   return (
     <div className="terminal" onClick={() => inputRef.current?.focus({ preventScroll: true })}>

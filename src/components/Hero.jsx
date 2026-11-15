@@ -54,8 +54,8 @@ export default function Hero() {
               ./contact-me
             </button>
             {profile.resume && (
-              <a className="btn" href={profile.resume} target="_blank" rel="noreferrer">
-                ./resume.pdf
+              <a className="btn" href={profile.resume} download="Diya_Singh_Resume.pdf">
+                ↓ resume.pdf
               </a>
             )}
           </div>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Diya Singh - Resume</title>
+<!--
+  Source for public/resume.pdf. To regenerate after editing (Windows):
+  "C:\Program Files\Google\Chrome\Application\chrome.exe" --headless=new --disable-gpu --no-pdf-header-footer --print-to-pdf="public\resume.pdf" "resume\resume.html"
+-->
+<style>
+  @page { size: A4; margin: 14mm 15mm; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.38;
+    color: #1a1a1a;
+  }
+  h1 { margin: 0; font-size: 22pt; letter-spacing: 0.5px; color: #0b2a5b; }
+  .headline { margin: 2px 0 6px; font-size: 11.5pt; font-weight: 600; color: #1f6fe0; }
+  .contact { margin: 0; font-size: 9.5pt; color: #333; }
+  .contact a { color: #333; text-decoration: none; }
+  h2 {
+    margin: 13px 0 6px;
+    padding-bottom: 2px;
+    font-size: 11pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0b2a5b;
+    border-bottom: 1.5px solid #1f6fe0;
+  }
+  p { margin: 0; }
+  .row { display: flex; justify-content: space-between; gap: 12px; }
+  .role { font-weight: 700; }
+  .org { font-weight: 400; }
+  .date { white-space: nowrap; color: #444; font-size: 10pt; }
+  .sub { color: #444; font-size: 9.5pt; }
+  ul { margin: 3px 0 8px; padding-left: 16px; }
+  li { margin-bottom: 2px; }
+  .skills { display: grid; grid-template-columns: 118px 1fr; row-gap: 2px; }
+  .skills dt { font-weight: 700; }
+  .skills dd { margin: 0; }
+  .entry { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>DIYA SINGH</h1>
+    <p class="headline">Aspiring DevOps Engineer | Laravel Developer</p>
+    <p class="contact">
+      Mumbai, Maharashtra &nbsp;|&nbsp;
+      <a href="mailto:diyasingh20041@gmail.com">diyasingh20041@gmail.com</a> &nbsp;|&nbsp;
+      <a href="https://www.linkedin.com/in/DiyaSingh45">linkedin.com/in/DiyaSingh45</a> &nbsp;|&nbsp;
+      <a href="https://github.com/Diya1235">github.com/Diya1235</a> &nbsp;|&nbsp;
+      <a href="https://diyasingh12.netlify.app">diyasingh12.netlify.app</a>
+    </p>
+  </header>
+
+  <h2>Summary</h2>
+  <p>
+    Laravel Developer at Enjay IT Solutions building CRM products, automation scripts and API
+    integrations. B.Sc. IT graduate (CGPA 9.9/10) with hands-on experience in Docker, Linux and
+    GitHub Actions, currently deepening my skills in Kubernetes and system design. Seeking a
+    full-time DevOps Engineer role.
+  </p>
+
+  <h2>Technical Skills</h2>
+  <dl class="skills">
+    <dt>DevOps</dt><dd>Docker, GitHub Actions (CI/CD), Linux, Netlify &nbsp;·&nbsp; <em>Learning:</em> Kubernetes</dd>
+    <dt>Languages</dt><dd>PHP, JavaScript, Python, C, C++</dd>
+    <dt>Frameworks</dt><dd>Laravel, React, Node.js, Express</dd>
+    <dt>Databases</dt><dd>MySQL, Redis, MongoDB</dd>
+    <dt>Tools</dt><dd>Git, Postman, Playwright</dd>
+  </dl>
+
+  <h2>Experience</h2>
+  <div class="entry">
+    <div class="row">
+      <p><span class="role">Laravel Developer</span> <span class="org">— Enjay IT Solutions, Vapi</span></p>
+      <p class="date">Aug 2026 – Present</p>
+    </div>
+    <ul>
+      <li>Develop new features and resolve bugs across two CRM products, <strong>Sanchay CRM</strong> and <strong>Sangam CRM</strong>.</li>
+      <li>Built <strong>SIP automation</strong> with Laravel and Playwright that extracts SIP data from investment platforms and syncs it into clients' CRMs, removing manual data entry.</li>
+      <li>Built <strong>scheduler-driven API integrations</strong> that pull data from external APIs into the CRM on a fixed schedule.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="row">
+      <p><span class="role">Intern (Virtual)</span> <span class="org">— CodSoft</span></p>
+      <p class="date">1 month</p>
+    </div>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="entry">
+    <div class="row">
+      <p><span class="role">Portfolio Website with CI/CD</span> <span class="sub">| React, Vite, GitHub Actions, Netlify</span></p>
+      <p class="date"><a href="https://diyasingh12.netlify.app" style="color:#1f6fe0">Live</a></p>
+    </div>
+    <ul>
+      <li>Interactive, terminal-themed portfolio; a GitHub Actions workflow builds every push and pull request, and Netlify deploys automatically from <code>main</code>.</li>
+      <li>Configured security headers and long-term caching for static assets in <code>netlify.toml</code>.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="row">
+      <p><span class="role">TechGuide</span> <span class="sub">| MongoDB, Express, React, Node.js, REST APIs</span></p>
+    </div>
+    <ul>
+      <li>Web platform for tech students featuring an ATS-friendly resume builder, a cover letter generator, and a project finder based on tech stack.</li>
+    </ul>
+  </div>
+
+  <h2>Education</h2>
+  <div class="row">
+    <p><span class="role">B.Sc. Information Technology</span> <span class="org">— St. John College of Humanities &amp; Sciences, Palghar (University of Mumbai)</span></p>
+    <p class="date"><strong>CGPA 9.9/10</strong></p>
+  </div>
+
+  <h2>Certifications</h2>
+  <ul>
+    <li>Linux &nbsp;·&nbsp; Data Visualization — Tata Group &nbsp;·&nbsp; Software Engineering — Electronic Arts &nbsp;·&nbsp; Data Science — IBM</li>
+    <li>CRM Fundamentals — Enjay Gurukul &nbsp;·&nbsp; Claude Course — Code with Mosh &nbsp;·&nbsp; Python &amp; IoT — ExcelR</li>
+  </ul>
+
+  <h2>Interests</h2>
+  <p>Writing poetry and personal reflections, watching cricket.</p>
+</body>
+</html>

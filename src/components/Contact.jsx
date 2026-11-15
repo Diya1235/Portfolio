@@ -57,9 +57,14 @@ export default function Contact() {
             </li>
           </ul>
           {profile.resume && (
-            <a className="btn btn--primary" href={profile.resume} target="_blank" rel="noreferrer">
-              ↓ download resume
-            </a>
+            <div className="hero-actions">
+              <a className="btn btn--primary" href={profile.resume} download="Diya_Singh_Resume.pdf">
+                ↓ download resume
+              </a>
+              <a className="btn" href={profile.resume} target="_blank" rel="noreferrer">
+                view online ↗
+              </a>
+            </div>
           )}
         </div>
 

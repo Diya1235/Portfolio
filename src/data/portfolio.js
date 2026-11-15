@@ -14,8 +14,8 @@ export const profile = {
   github: "https://github.com/Diya1235",
   githubUser: "Diya1235",
   linkedin: "https://www.linkedin.com/in/DiyaSingh45",
-  // TODO: put your resume in /public/resume.pdf, then change this to "/resume.pdf"
-  resume: null,
+  // Generated from resume/resume.html — see the comment at the top of that file to regenerate
+  resume: "/resume.pdf",
   tagline: "From localhost to production — I love what happens in between.",
   openTo: "Full-time DevOps Engineer roles",
 };
