@@ -132,8 +132,8 @@ export const projects = [
     stack: ["React", "Vite", "GitHub Actions", "Netlify"],
     devops: "CI on every PR · automated production deploys",
     status: "in-progress",
-    repo: null, // TODO: add this repo's URL once pushed to GitHub
-    live: null,
+    repo: "https://github.com/Diya1235/Portfolio",
+    live: "https://diyasingh12.netlify.app",
   },
   {
     name: "Dockerized TechGuide",
